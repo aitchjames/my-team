@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap");
+:root {
+  --color-midnight-green: #014E56;
+  --color-light-coral: #F67E7E;
+  --color-white: #ffffff;
+  --color-rapture-blue: #79C8C7;
+  --color-police-blue: #2C6269;
+  --color-deep-jungle: #004047;
+  --color-sacramento: #012F34;
+  --color-dark-green: #002529;
+  --font-primary: 'Livvic', sans-serif; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg-1);
+  color: var(--color-white);
+  min-height: 100vh;
+  min-width: 32rem;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.container {
+  margin: 0 auto;
+  max-width: 95%;
+  min-width: 32rem;
+  width: 110rem; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.heading-one-l {
+  font-size: 10rem;
+  line-height: 10rem;
+  font-weight: 700; }
+
+.heading-one-s {
+  font-size: 6.4rem;
+  line-height: 5.6rem;
+  font-weight: 700; }
+
+.heading-two {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  font-weight: 700; }
+
+.heading-three {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700; }
+
+.body-copy-l {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 600; }
+
+.body-copy-s {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 600; }

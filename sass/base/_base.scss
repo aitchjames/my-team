@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-bg-1);
+    color: var(--color-white);
+    min-height: 100vh;
+    min-width: 32rem;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 95%;
+    min-width: 32rem;
+    width: 110rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

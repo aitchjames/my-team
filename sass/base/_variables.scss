@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap');
+
+:root {
+    --color-midnight-green: #014E56;
+    --color-light-coral: #F67E7E;
+    --color-white: #ffffff;
+
+    --color-rapture-blue: #79C8C7;
+    --color-police-blue: #2C6269;
+    --color-deep-jungle: #004047;
+    --color-sacramento: #012F34;
+    --color-dark-green: #002529;
+    
+    --font-primary: 'Livvic', sans-serif;
+}
+
+$breakpoint-xsm: 410px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
