@@ -1,0 +1,31 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    text-decoration: none;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    border-radius: 10rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+        border: 2px solid var(--color-white);
+        background-color: var(--color-white);
+        color: var(--color-sacramento);
+    }
+
+    &-dark {
+        border: 2px solid var(--color-sacramento);
+        color: var(--color-sacramento);
+
+        &:hover {
+            border: 2px solid var(--color-sacramento);
+            background-color: var(--color-sacramento);
+            color: var(--color-white);
+        }
+    }
+}

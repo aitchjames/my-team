@@ -1,0 +1,15 @@
+.header {
+    padding: 7.4rem 0 0 0;
+    background-repeat: no-repeat;
+    background-image: url(./../images/bg-pattern-home-1.svg), url(./../images/bg-pattern-home-2.svg);
+    background-position-y: 53%, bottom;
+    background-position-x: -10rem, 60vw;
+}
+
+.home-hero {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    column-gap: 2rem;
+    padding-bottom: 20rem;
+    align-items: end;
+}

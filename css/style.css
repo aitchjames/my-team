@@ -24,7 +24,7 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background-color: var(--color-bg-1);
+  background-color: var(--color-midnight-green);
   color: var(--color-white);
   min-height: 100vh;
   min-width: 32rem;
@@ -38,10 +38,28 @@ body {
   min-width: 32rem;
   width: 110rem; }
 
+.container-sm {
+  margin: 0 auto;
+  max-width: 95%;
+  min-width: 32rem;
+  width: 92rem; }
+
 img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.content-section {
+  padding: 14rem 0; }
+
+.bg-sacramento {
+  background-color: var(--color-sacramento); }
+
+.bg-deep-jungle {
+  background-color: var(--color-deep-jungle); }
+
+.c-light-coral {
+  color: var(--color-light-coral); }
 
 .heading-one-l {
   font-size: 10rem;
@@ -72,3 +90,71 @@ img {
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: 600; }
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  background-color: transparent;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  text-decoration: none;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  border-radius: 10rem;
+  transition: all 0.2s ease; }
+  .button:hover {
+    border: 2px solid var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-sacramento); }
+  .button-dark {
+    border: 2px solid var(--color-sacramento);
+    color: var(--color-sacramento); }
+    .button-dark:hover {
+      border: 2px solid var(--color-sacramento);
+      background-color: var(--color-sacramento);
+      color: var(--color-white); }
+
+.header {
+  padding: 7.4rem 0 0 0;
+  background-repeat: no-repeat;
+  background-image: url(./../images/bg-pattern-home-1.svg), url(./../images/bg-pattern-home-2.svg);
+  background-position-y: 53%, bottom;
+  background-position-x: -10rem, 60vw; }
+
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  column-gap: 2rem;
+  padding-bottom: 20rem;
+  align-items: end; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12rem; }
+  .nav-logo {
+    margin-right: 7.5rem;
+    height: 4rem;
+    width: auto; }
+  .nav-link {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 4rem; }
+  .nav > *:last-child {
+    margin-left: auto; }
+
+.call-to-action {
+  padding: 7.7rem 0;
+  background-color: var(--color-light-coral);
+  color: var(--color-sacramento); }
+  .call-to-action .container-sm {
+    display: flex;
+    justify-content: space-between; }
+
+.footer {
+  padding: 4.5rem 0; }

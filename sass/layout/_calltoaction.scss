@@ -1,0 +1,10 @@
+.call-to-action {
+    padding: 7.7rem 0;
+    background-color: var(--color-light-coral);
+    color: var(--color-sacramento);
+
+    & .container-sm {
+        display: flex;
+        justify-content: space-between;
+    }
+}

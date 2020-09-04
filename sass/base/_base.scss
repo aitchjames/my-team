@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: var(--font-primary);
-    background-color: var(--color-bg-1);
+    background-color: var(--color-midnight-green);
     color: var(--color-white);
     min-height: 100vh;
     min-width: 32rem;
@@ -30,8 +30,31 @@ body {
     width: 110rem;
 }
 
+.container-sm {
+    margin: 0 auto;
+    max-width: 95%;
+    min-width: 32rem;
+    width: 92rem;
+}
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.content-section {
+    padding: 14rem 0;
+}
+
+.bg-sacramento {
+    background-color: var(--color-sacramento);
+}
+
+.bg-deep-jungle {
+    background-color: var(--color-deep-jungle);
+}
+
+.c-light-coral {
+    color: var(--color-light-coral);
 }
