@@ -28,6 +28,10 @@ body {
     max-width: 95%;
     min-width: 32rem;
     width: 110rem;
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        max-width: 90%;
+    }
 }
 
 .container-sm {
@@ -35,6 +39,10 @@ body {
     max-width: 95%;
     min-width: 32rem;
     width: 92rem;
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        max-width: 90%;
+    }
 }
 
 img {
@@ -45,6 +53,10 @@ img {
 
 .content-section {
     padding: 14rem 0;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+        padding: 10rem 0;
+    }    
 }
 
 .bg-sacramento {
@@ -57,4 +69,20 @@ img {
 
 .c-light-coral {
     color: var(--color-light-coral);
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.three-col-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 3rem;
 }

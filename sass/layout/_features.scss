@@ -1,0 +1,73 @@
+.features {
+    
+    &-heading {
+        position: relative;
+        max-width: 44.5rem;
+        padding-top: 8.3rem;
+
+        @media only screen and (max-width: $breakpoint-lg) {
+            max-width: 43rem;
+            padding-top: 3rem;
+            margin-bottom: 6rem;
+        }
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            max-width: 22rem;
+            margin-bottom: 4rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 0.4rem;
+            width: 5rem;
+            top: 0;
+            left: 0;
+            background-color: var(--color-light-coral);    
+        }
+    }
+
+    &-section {
+        background-repeat: no-repeat;
+        background-image: url(./../images/bg-pattern-home-3.svg);
+        background-position: 108% 100%;
+
+        @media only screen and (max-width: $breakpoint-lg) {
+            background-position: 118% 0%;
+        }
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            background-position: 157% 0%;
+            padding: 6.5rem 0;
+        }
+
+        & .container {
+
+            & .two-col-grid {
+                @media only screen and (max-width: $breakpoint-lg) {
+                    max-width: 60rem;
+                    margin: 0 auto;
+                }
+            }
+        }        
+    }
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    row-gap: 1.75rem;
+    column-gap: 2.5rem;
+    margin-bottom: 3.5rem;
+
+    &-icon {
+        grid-row: 1 / span 2;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+}

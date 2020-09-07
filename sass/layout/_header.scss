@@ -3,7 +3,18 @@
     background-repeat: no-repeat;
     background-image: url(./../images/bg-pattern-home-1.svg), url(./../images/bg-pattern-home-2.svg);
     background-position-y: 53%, bottom;
-    background-position-x: -10rem, 60vw;
+    background-position-x: -10rem, 58vw;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+        padding: 6rem 0 0 0;
+        background-image: url(./../images/bg-pattern-home-2.svg);
+        background-position-y:  bottom;
+        background-position-x: center;
+    }
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        padding: 3rem 0 0 0;
+    }
 }
 
 .home-hero {
@@ -11,5 +22,42 @@
     grid-template-columns: 1.3fr 1fr;
     column-gap: 2rem;
     padding-bottom: 20rem;
-    align-items: end;
+
+    @media only screen and (max-width: $breakpoint-lg) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        & > .heading-one-l {
+            text-align: center;
+            max-width: 35rem;
+        }
+    }
+
+    & > .body-copy-l {
+        position: relative;
+        max-width: 44.5rem;
+        justify-self: end;
+        padding-top: 8.3rem;
+
+        @media only screen and (max-width: $breakpoint-lg) {
+            max-width: 46rem;
+            justify-self: auto;
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 0.4rem;
+            width: 5rem;
+            top: 0;
+            left: 0;
+            background-color: var(--color-rapture-blue);
+        
+            @media only screen and (max-width: $breakpoint-lg) {
+                display: none;
+            }
+        }
+    }
 }
