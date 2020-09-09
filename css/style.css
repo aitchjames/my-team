@@ -8,6 +8,7 @@
   --color-deep-jungle: #004047;
   --color-sacramento: #012F34;
   --color-dark-green: #002529;
+  --color-error: #F67E7E;
   --font-primary: 'Livvic', sans-serif; }
 
 *,
@@ -188,6 +189,18 @@ img {
     background-image: url(./../images/bg-pattern-about-1-mobile-nav-1.svg);
     background-position-y: 100%;
     background-position-x: 107.5%; }
+    @media only screen and (max-width: 1024px) {
+      .header-about {
+        background-position-y: 100%;
+        background-position-x: 113%; } }
+    @media only screen and (max-width: 768px) {
+      .header-about {
+        background-position-y: 100%;
+        background-position-x: 118%; } }
+    @media only screen and (max-width: 640px) {
+      .header-about {
+        background-position-y: 38rem;
+        background-position-x: 133%; } }
   .header-contact {
     background-repeat: no-repeat;
     background-image: url(./../images/bg-pattern-about-2-contact-1.svg), url(./../images/bg-pattern-contact-2.svg);
@@ -249,6 +262,10 @@ img {
   grid-template-columns: 1fr 2fr;
   column-gap: 2rem;
   padding-bottom: 15rem; }
+  @media only screen and (max-width: 1024px) {
+    .about-hero {
+      grid-template-columns: 1fr;
+      justify-items: center; } }
   .about-hero > .body-copy-l {
     position: relative;
     justify-self: end;
@@ -461,18 +478,36 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); }
   @media only screen and (max-width: 1024px) {
     .home-testimonials {
-      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); } }
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      margin: 0 auto; } }
   @media only screen and (max-width: 640px) {
     .home-testimonials {
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); } }
 
-.about-directors__heading {
-  text-align: center;
-  margin-bottom: 6rem; }
+.about-directors {
+  background-repeat: no-repeat;
+  background-image: url(./../images/bg-pattern-about-2-contact-1.svg), url(./../images/bg-pattern-home-4-about-3.svg);
+  background-position-y: 0, bottom;
+  background-position-x: -10rem, right; }
+  @media only screen and (max-width: 640px) {
+    .about-directors {
+      background-position-y: -10rem, bottom;
+      background-position-x: -8rem, right; } }
+  .about-directors__heading {
+    text-align: center;
+    margin-bottom: 6rem; }
 
 .about-testimonials {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   row-gap: 10rem; }
+  @media only screen and (max-width: 1024px) {
+    .about-testimonials {
+      margin: 0 auto;
+      max-width: 60rem;
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); } }
+  @media only screen and (max-width: 640px) {
+    .about-testimonials {
+      margin-bottom: 5rem; } }
 
 .about-testimonial {
   position: relative;
@@ -503,7 +538,8 @@ img {
     text-align: center;
     opacity: 0;
     visibility: hidden;
-    z-index: 5; }
+    z-index: 5;
+    transition: opacity 0.2s ease, visibility 0.2s ease; }
     .about-testimonial__overlay .heading-three {
       color: var(--color-rapture-blue);
       margin-bottom: 1rem; }
@@ -532,6 +568,22 @@ img {
       background-color: var(--color-rapture-blue); }
       .about-testimonial__button.active svg {
         transform: rotate(45deg); }
+
+.about-clients__heading {
+  text-align: center;
+  margin-bottom: 10rem; }
+
+.about-clients__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  column-gap: 2rem;
+  row-gap: 4rem;
+  justify-items: center;
+  align-items: center; }
+  .about-clients__list img {
+    max-height: 3rem;
+    max-width: 100%; }
 
 .contact-hero {
   display: grid;
@@ -575,7 +627,27 @@ img {
   max-width: 54rem; }
 
 .contact-form__group {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
+  .contact-form__group small {
+    display: block;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--color-error);
+    font-weight: 600;
+    display: none; }
+  .contact-form__group.success .contact-form__input {
+    border-color: var(--color-success); }
+    .contact-form__group.success .contact-form__input::placeholder {
+      color: var(--color-success);
+      opacity: 0.7; }
+  .contact-form__group.error .contact-form__input {
+    border-bottom: 1px solid var(--color-error); }
+    .contact-form__group.error .contact-form__input::placeholder {
+      color: var(--color-error);
+      opacity: 0.7; }
+  .contact-form__group.error small {
+    display: block; }
 
 .contact-form__input {
   width: 100%;

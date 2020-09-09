@@ -67,22 +67,27 @@
                 <div class="contact-form__wrapper">
                     <form action="" class="contact-form">
                         <div class="contact-form__group">
-                            <input type="text" name="name" id="name" class="contact-form__input" placeholder="Name">
+                            <input type="text" name="name" id="name" class="contact-form__input" placeholder="Name" required>
+                            <small></small>
                         </div>
                         <div class="contact-form__group">
-                            <input type="email" name="email" id="email" class="contact-form__input" placeholder="Email Address">
+                            <input type="email" name="email" id="email" class="contact-form__input" placeholder="Email Address" required>
+                            <small></small>
                         </div>
                         <div class="contact-form__group">
-                            <input type="text" name="company" id="company" class="contact-form__input" placeholder="Company Name">
+                            <input type="text" name="company" id="company" class="contact-form__input" placeholder="Company Name" required>
+                            <small></small>
                         </div>
                         <div class="contact-form__group">
-                            <input type="text" name="worktitle" id="worktitle" class="contact-form__input" placeholder="Title">
+                            <input type="text" name="worktitle" id="worktitle" class="contact-form__input" placeholder="Title" required>
+                            <small></small>
                         </div>
                         <div class="contact-form__group">
-                            <textarea name="message" id="message" class="contact-form__input" placeholder="Message"></textarea>
+                            <textarea name="message" id="message" class="contact-form__input" placeholder="Message" required></textarea>
+                            <small></small>
                         </div>
                         <div class="contact-form__group">
-                            <input type="submit" value="submit" class="button button-filled">
+                            <input type="submit" value="submit" id="submitButton" class="button button-filled">
                         </div>
                     </form>
                 </div>

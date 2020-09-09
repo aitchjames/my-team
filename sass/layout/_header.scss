@@ -21,6 +21,21 @@
         background-image: url(./../images/bg-pattern-about-1-mobile-nav-1.svg);
         background-position-y: 100%;
         background-position-x: 107.5%;
+
+        @media only screen and (max-width: $breakpoint-lg) {
+            background-position-y: 100%;
+            background-position-x: 113%;
+        }
+
+        @media only screen and (max-width: $breakpoint-md) {
+            background-position-y: 100%;
+            background-position-x: 118%;
+        }
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            background-position-y: 38rem;
+            background-position-x: 133%;
+        }
     }
 
     &-contact {
@@ -101,6 +116,11 @@
         grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
         padding-bottom: 15rem;
+
+        @media only screen and (max-width: $breakpoint-lg) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
 
         & > .body-copy-l {
             position: relative;

@@ -1,6 +1,15 @@
 .about {
 
     &-directors {
+        background-repeat: no-repeat;
+        background-image: url(./../images/bg-pattern-about-2-contact-1.svg), url(./../images/bg-pattern-home-4-about-3.svg);
+        background-position-y: 0, bottom;
+        background-position-x: -10rem, right;
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            background-position-y: -10rem, bottom;
+            background-position-x: -8rem, right;
+        }
 
         &__heading {
             text-align: center;
@@ -11,6 +20,16 @@
     &-testimonials {
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         row-gap: 10rem;
+
+        @media only screen and (max-width: $breakpoint-lg) {
+            margin: 0 auto;
+            max-width: 60rem;
+            grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+        }
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            margin-bottom: 5rem;
+        }
     }
 
     &-testimonial {
@@ -52,6 +71,7 @@
             opacity: 0;
             visibility: hidden;
             z-index: 5;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
 
             & .heading-three {
                 color: var(--color-rapture-blue);
@@ -93,6 +113,29 @@
                 & svg {
                     transform: rotate(45deg);
                 }
+            }
+        }
+    }
+
+    &-clients {
+
+        &__heading {
+            text-align: center;
+            margin-bottom: 10rem;
+        }
+
+        &__list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            column-gap: 2rem;
+            row-gap: 4rem;
+            justify-items: center;
+            align-items: center;
+
+            & img {
+                max-height: 3rem;
+                max-width: 100%;
             }
         }
     }
