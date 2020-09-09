@@ -15,6 +15,38 @@
     @media only screen and (max-width: $breakpoint-sm) {
         padding: 3rem 0 0 0;
     }
+
+    &-about {
+        background-repeat: no-repeat;
+        background-image: url(./../images/bg-pattern-about-1-mobile-nav-1.svg);
+        background-position-y: 100%;
+        background-position-x: 107.5%;
+    }
+
+    &-contact {
+        background-repeat: no-repeat;
+        background-image: url(./../images/bg-pattern-about-2-contact-1.svg), url(./../images/bg-pattern-contact-2.svg);
+        background-position-y: 25rem, 100%;
+        background-position-x: -10rem, 108%;
+
+        @media only screen and (max-width: $breakpoint-xl) {
+            background-image: url(./../images/bg-pattern-about-2-contact-1.svg), url(./../images/bg-pattern-contact-2.svg);
+            background-position-y: 15rem, 100%;
+            background-position-x: -10rem, 120%;
+        }
+
+        @media only screen and (max-width: $breakpoint-lg) {
+            background-image: url(./../images/bg-pattern-about-2-contact-1.svg), url(./../images/bg-pattern-contact-2.svg);
+            background-position-y: 25rem, 100%;
+            background-position-x: -10rem, 120%;
+        }
+
+        @media only screen and (max-width: $breakpoint-md) {
+            background-image:  url(./../images/bg-pattern-contact-2.svg);
+            background-position-y:  110%;
+            background-position-x:  150%;
+        }
+    }
 }
 
 .home-hero {
@@ -60,4 +92,43 @@
             }
         }
     }
+}
+
+.about {
+
+    &-hero {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        padding-bottom: 15rem;
+
+        & > .body-copy-l {
+            position: relative;
+            justify-self: end;
+            padding-top: 4.5rem;
+    
+            @media only screen and (max-width: $breakpoint-lg) {
+                max-width: 46rem;
+                justify-self: auto;
+                padding-top: 1.5rem;
+                text-align: center;
+            }
+    
+            &::before {
+                content: '';
+                position: absolute;
+                height: 0.4rem;
+                width: 5rem;
+                top: 0;
+                left: 0;
+                background-color: var(--color-light-coral);
+            
+                @media only screen and (max-width: $breakpoint-lg) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    
 }
